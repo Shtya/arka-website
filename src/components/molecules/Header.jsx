@@ -21,28 +21,19 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
-  const [lastY, setLastY] = useState(0);
 
-  // Scroll effects: blur + shrink + smart hide
   useEffect(() => {
+    let lastY = window.scrollY;
+
     const onScroll = () => {
       const y = window.scrollY;
-      setScrolled(y > 8);
-      setHidden(y > lastY && y > 120); // hide when scrolling down past 120px
-      setLastY(y);
+
+      setScrolled(y > 50);
     };
-    onScroll();
+
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, [lastY]);
-
-  // Lock body when menu open
-  useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : '';
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [open]);
+  }, []);
 
   return (
     <motion.header
@@ -72,9 +63,9 @@ export default function Header() {
 
           {/* Right: CTA + Burger */}
           <div className='flex items-center gap-2 pr-2'>
-            <Button href={"#contact-us"} className='max-md:hidden !px-10' size='md' >
-							Contact us
-						</Button> 
+            <Button href={'#contact-us'} className='max-md:hidden !px-10' size='md'>
+              Contact us
+            </Button>
 
             {/* Burger */}
             <button onClick={() => setOpen(true)} className='inline-flex md:hidden items-center justify-center h-11 w-11 rounded-full border border-black/10 bg-white/80 backdrop-blur hover:bg-white transition' aria-label='Open menu'>

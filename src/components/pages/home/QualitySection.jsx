@@ -11,7 +11,7 @@ export default function QualitySection() {
   }, []);
 
   return (
-    <section className='container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16'>
+    <section className='container px-4 sm:px-6 max-sm:!my-8 lg:px-8 py-10 md:py-16'>
       <div className='bg-white rounded-[36px] p-5 sm:p-8 md:p-10 py-16 md:py-20 shadow-sm'>
         <div className='grid lg:grid-cols-[500px_1fr] gap-10 items-start'>
           {/* ===== Left: Headline & sub ===== */}

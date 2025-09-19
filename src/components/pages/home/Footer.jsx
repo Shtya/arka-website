@@ -7,10 +7,10 @@ import Button from '@/components/atoms/Button';
 const Footer = () => {
   return (
     <section className='container !mb-4 !px-4 text-white'>
-      <div className='bg-[#101010] rounded-[20px] container mx-auto px-4 md:px-6 lg:px-10 pt-14 md:pt-20'>
+      <div className='bg-[#101010] rounded-[20px] container !pt-12 md:!pt-20 '>
         {/* Headline */}
-        <div className='text-center mx-auto' data-aos='fade-up'>
-          <h2 className='text-3xl sm:text-4xl font-bold leading-tight'>Let&apos;s Work Together To Grow Your Business</h2>
+        <div className='text-center mx-auto ' data-aos='fade-up'>
+          <h2 style={{marginTop : "30px"}} className=' text-3xl sm:text-4xl font-bold leading-tight'>Let&apos;s Work Together To Grow Your Business</h2>
           <p className='mt-4 max-2xl:max-w-[700px] w-full mx-auto text-white/70 italic leading-7' data-aos='fade-up' data-aos-delay='100'>
             &quot;Let’s turn your idea into reality. Reach out today and let’s discuss how we can help your business thrive.&quot;
           </p>

@@ -22,9 +22,9 @@ export default function OurWorkSection() {
           {/* Right: award chip + purple bar */}
           <div className='bg-white rounded-[20px_20px_0_0] h-full p-6' data-aos='fade-left' data-aos-delay='100'>
             <h2 className='text-[56px] max-md:text-[40px] font-[500] leading-[1.05]'>
-              Our work <img src='/home/tag-shape.png' className='inline-block h-[60px] align-middle' />
+              Our work <img src='/home/tag-shape.png' className=' max-sm:!mt-4 inline-block h-[60px] align-middle' />
               <br />
-              <span className='bg-primary inline-block !mt-4 rounded-2xl px-4 text-white'>Our Success </span>
+              <span className='bg-primary inline-block !mt-4 rounded-2xl py-2 px-4 text-white'>Our Success </span>
             </h2>
           </div>
         </div>
