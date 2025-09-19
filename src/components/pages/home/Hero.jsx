@@ -44,7 +44,7 @@ export default function Hero() {
 
             {/* Floating CTA bubble */}
             <div className='absolute right-0 -bottom-px bg-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-tl-[15px] ' data-aos='fade-left' data-aos-delay='250'>
-              <Button href={'#contact-us'}  variant='primary' className='!px-10' size='sm'>
+              <Button href={'#contact-us'}  variant='primary' className='!px-10' size='md'>
                   Contact us
                 </Button>
 

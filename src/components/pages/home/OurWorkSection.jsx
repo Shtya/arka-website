@@ -20,7 +20,7 @@ export default function OurWorkSection() {
           </div>
 
           {/* Right: award chip + purple bar */}
-          <div className='bg-white rounded-[20px_20px_0_0] h-full p-6' data-aos='fade-left' data-aos-delay='100'>
+          <div className='bg-white rounded-[20px_20px_0_0] flex flex-col justify-center h-full p-6' data-aos='fade-left' data-aos-delay='100'>
             <h2 className='text-[56px] max-md:text-[40px] font-[500] leading-[1.05]'>
               Our work <img src='/home/tag-shape.png' className=' max-sm:!mt-4 inline-block h-[60px] align-middle' />
               <br />

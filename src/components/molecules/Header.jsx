@@ -14,7 +14,7 @@ const NAV = [
   { label: 'About us', href: '#about' },
   { label: 'Team', href: '#team' },
   { label: 'Portfolio', href: '#portfolio' },
-  { label: 'Contact us', href: '#contact' },
+  { label: 'Contact us', href: '#contact-us' },
 ];
 
 export default function Header() {
